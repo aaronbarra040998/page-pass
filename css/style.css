@@ -1,0 +1,283 @@
+@import"common.css";
+@import"styles.css";
+@import"estiloscli.css";
+@font-face {
+    font-family: 'Futura';
+    src: local('Futura Bold'), local('Futura-Bold'),
+        url('FuturaLT-Bold.woff2') format('woff2'),
+        url('FuturaLT-Bold.woff') format('woff'),
+        url('FuturaLT-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+#seccion-1 {
+    display: flex-box;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+}
+
+#seccion-1 .ico-butt img {
+    margin: 0 15% 0 15%;
+    display: block;
+    width: 100px;
+    height: 100px;
+    animation: palpitar 1s infinite alternate;
+}
+
+/* Animación para el efecto de palpitar */
+@keyframes palpitar {
+    from {
+        transform: scale(1);
+        /* Tamaño original */
+    }
+
+    to {
+        transform: scale(1.1);
+        /* Tamaño aumentado */
+    }
+}
+
+#seccion-1 .central {
+    padding-top: 35%;
+    ;
+}
+
+#seccion-1 .central img {
+    margin: 0 auto;
+    display: block;
+    width: 95%;
+    height: 35%;
+    align-items: center;
+
+}
+
+
+/* Additional styles for positioning the 'div cont' elements in a circle */
+#seccion-1 .cont-1,
+#seccion-1 .cont-2,
+#seccion-1 .cont-3,
+#seccion-1 .cont-4,
+#seccion-1 .cont-5,
+#seccion-1 .cont-6,
+#seccion-1 .cont-7,
+#seccion-1 .cont-8 {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    /* Change the width to 50px */
+    height: 50px;
+    /* Change the height to 50px */
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    /* Change the flex-direction to row */
+    justify-content: center;
+    align-items: center;
+}
+
+/* You can also adjust the positioning if needed */
+#seccion-1 .cont-1 {
+    transform: translate(-210px, -104px);
+}
+
+/* contacto */
+#seccion-1 .cont-2 {
+    transform: translate(239px, -153px);
+}
+
+/* proyectos */
+#seccion-1 .cont-3 {
+    transform: translate(362px, -12px);
+}
+
+/* trabajamos */
+#seccion-1 .cont-4 {
+    transform: translate(433px, 139px);
+}
+
+/* energia */
+#seccion-1 .cont-5 {
+    transform: translate(350px, 317px);
+}
+
+/* redes */
+#seccion-1 .cont-6 {
+    transform: translate(-41px, 361px)  ;
+}
+
+/* seguridad ele */
+#seccion-1 .cont-7 {
+    transform: translate(-430px, 240px);
+}
+
+/* telecomunicaciones */
+#seccion-1 .cont-8 {
+    transform: translate(-446px, 49px);
+}
+
+#seccion-1 .cont-6 button {
+    position: absolute;
+    top: 65px;
+    /* Adjust the distance from the top */
+}
+
+/* seccion1-bottones */
+.btn {
+    font-family: 'Futura', sans-serif;
+    position: relative;
+    padding: 20px 20px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    text-indent: 0px;
+    z-index: 2;
+    border-radius: 15px;
+    font-size:190%;
+}
+
+.btn-2 {
+    border: 3px solid;
+
+}
+
+.btn-2:hover {
+    background-color: #0514338e;
+    box-shadow: 0 0 20px #ededed;
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+.btn-2 span:nth-child(n) {
+    position: absolute;
+    width: 20px;
+    height:20px;
+    border: 3px solid;
+    transition: all 0.6s ease;
+}
+
+.btn-2 span:nth-child(1) {
+    right: 10%;
+    top: -20px;
+    background-color: #fff;
+}
+
+.btn-2 span:nth-child(2) {
+    left: 10%;
+    bottom: -20px;
+}
+
+.btn-2:hover span:nth-child(1) {
+    right: 80%;
+    transform: rotate(90deg);
+    color: #92B21B;
+    background-color: #e6f8a5;
+
+}
+
+.btn-2:hover span:nth-child(2) {
+    left: 80%;
+    transform: rotate(90deg);
+    color: #00246A;
+    background-color: #b0bcff
+}
+
+/* parte-del-boton3 */
+
+.btn-3 {
+    border: 3px solid;
+
+}
+
+.btn-3:hover {
+    background-color: #0514338e;
+    box-shadow: 0 0 20px #ededed;
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+.btn-3 span:nth-child(n) {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 3px solid;
+    transition: all 0.6s ease;
+}
+
+.btn-3 span:nth-child(1) {
+    right: 10%;
+    top: -20px;
+    background-color: #fff;
+}
+
+.btn-3 span:nth-child(2) {
+    left: 10%;
+    bottom: -20px;
+}
+
+.btn-3:hover span:nth-child(1) {
+    right: 48%;
+    transform: rotate(90deg);
+    color: #92B21B;
+    background-color: #e6f8a5;
+
+}
+
+.btn-3:hover span:nth-child(2) {
+    left: 48%;
+    transform: rotate(90deg);
+    color: #00246A;
+    background-color: #b0bcff
+}
+
+/* boton-4-comple */
+.btn-4 {
+    border: 3px solid;
+
+}
+
+.btn-4:hover {
+    background-color: #0514338e;
+    box-shadow: 0 0 20px #ededed;
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+.btn-4 span:nth-child(n) {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 3px solid;
+    transition: all 0.6s ease;
+}
+
+.btn-4 span:nth-child(1) {
+    left: 10%;
+    top: -20px;
+    background-color: #fff;
+}
+
+.btn-4 span:nth-child(2) {
+    right: 10%;
+    bottom: -20px;
+}
+
+.btn-4:hover span:nth-child(1) {
+    left: 80%;
+    transform: rotate(90deg);
+    color: #92B21B;
+    background-color: #e6f8a5;
+
+}
+
+.btn-4:hover span:nth-child(2) {
+    right: 80%;
+    transform: rotate(90deg);
+    color: #00246A;
+    background-color: #b0bcff
+}
